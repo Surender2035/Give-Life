@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Register to request Life or Give Life, give blood and give life. Find out more about Blood donation.">
+  <meta name="keywords" content="Donate Blood, Request Blood, Blood related information">
+  <title>Give Blood-Give Life | Welcome</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <header>
+    <div id="branding">
+      <h1>Give Life</h1>
+    </div>
+
+    <!-- Sign-in section -->
+
+    <button class="signin-btn" onclick="document.getElementById('id01').style.display='block'">Sign-In</button>
+    <div id="id01" class="signin_modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="signin_modal-content animate" action="php/login.php" method="post">
+        <div class="imgcontainer">
+          <img src="./Images/Modalimg.jpeg" alt="Error loading the Image" class="avatar">
+        </div>
+        <div class="signin_modal_container">
+          <label for="uname"><b>Email</b></label>
+          <input type="text" placeholder="Enter your Email" name="uname" required>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button class="login" type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember Me
+          </label>
+        </div>
+        <div class="signin_modal_container" style="background-color: #f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"> Cancel </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <!--website tab's-->
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="why give blood.html">Why give blood</a>
+    <a href="who can give blood.html">Who can give blood</a>
+    <a href="the donation process.html">The donation process</a>
+    <a href="where to donate.html">Where to donate</a>
+  </div>
+
+  <!--Showcase-->
+
+  <section id="showcase">
+    <div class="container">
+      <h1>Become a blood donor</h1>
+      <p>Ling Xiao sat down cross-legged to meditate. If Cheng Qiantai were to walk in, he’d think his disciple was putting his heart and soul into comprehending various techniques and methods related to concocting medicine.</p>
+    </div>
+  </section>
+
+  <!--Main page Contents-->
+
+  <section id="stuffs">
+    <div class="stuff">
+      <img src="./Images/coronavirus.jpg" alt="Error loading the Image">
+      <h2>Coronavirus Update</h2>
+      <p>Donation is possible despite COVID-19 restriction.</p>
+    </div>
+
+    <div class="stuff">
+      <img src="./Images/firsttime.jpg" alt="Error loading the Image">
+      <h2>Donating for the first time?</h2>
+      <p>Information for new donors.</p>
+    </div>
+
+    <!--Register Button-->
+
+    <div class="stuff">
+      <div class="icon">
+        <h1>Become a blood donor</h1>
+        <p style="width:100%; margin-bottom: 2px;">If you are new to Give-Life...</p>
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="register">Register</button>
+
+        <!--Register Modal-->
+
+        <div id="id02" class="reg-modal">
+          <span onclick="document.getElementById('id02').style.display='none'" class="reg-close" title="Close Modal">&times;</span>
+          <form class="reg_modal-content reg-animate" action="php/register.php" method="post">
+            <div class="reg_modalcontainer">
+              <h1>Register</h1>
+              <p style="width:100%; margin-bottom: 2px; color:#FF0000;">Please fill this form to create an account. <br>Your details will be made public to the community. By using this service you take an oath to help those who are in need.</p>
+              <hr>
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Enter your Name" name="name" id="name" required>
+
+              <label for="city"><b>City</b></label>
+              <input type="text" placeholder="Enter your City" name="city" id="city" required>
+
+              <label for="contact-number"><b>Contact Number</b></label>
+              <input type="text" placeholder="Enter your Number" name="number" id="phone" required>
+
+              <label for="blood-group"><b>Blood Group</b></label>
+              <select id="blood_group" name="blood_group">
+                <option selected hidden value="">Select BloodGroup</option>
+                <option value="a+">A+</option>
+                <option value="a-">A-</option>
+                <option value="b+">B+</option>
+                <option value="b-">B-</option>
+                <option value="ab+">AB+</option>
+                <option value="ab-">AB-</option>
+                <option value="o+">O+</option>
+                <option value="o+">O-</option>
+              </select>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="password" id="pswrd_1" required>
+
+              <hr>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+              <p style="width:100%; margin-bottom: 2px;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class=reg_cancelbtn>Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+                <div class="signin">
+                  <p style="width:100%; margin-bottom: 2px;">Already have an account? <a href="#">Sign in</a>.</p>
+                </div>
+              </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer Section-->
+
+  <footer class="maker">
+    <section id="boxes">
+      <div class="footer_container">
+        <div class="box">
+          <img src="./Images/who_can_give_blood.jpg" alt="Error loading the image">
+          <h3>Who can give blood?</h3>
+          <p>Most people can give blood if they are fit and healthy. Find out if you can give.</p>
+        </div>
+        <div class="box">
+          <img src="./Images/Give_life_app.jpg" alt="Error loading the image">
+          <h3>Get the Give-Life app!</h3>
+          <p>If you already have an online account why not download our Android app to book and manage appointments.</p>
+        </div>
+        <div class="box">
+          <img src="./Images/contact_us.jpg" alt="Error loading the image">
+          <h3>Contact Us</h3>
+          <p>Have a question? Want to leave feedback or share your blood donation story with us? Contact us here or call 012-3456789</p>
+        </div>
+      </div>
+      <p>Surender's First Web Design, Copyright &copy; 2020</p>
+    </section>
+  </footer>
+</body>
+
+</html>

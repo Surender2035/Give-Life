@@ -1,0 +1,431 @@
+body {
+  font: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5 padding:0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #f2f2f2;
+  color: #840404;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+  padding-left: 70px;
+  padding-top: 1rem;
+}
+
+/* Sign In Modal*/
+.signin-btn {
+  width: 100px;
+  border-radius: 0.3rem;
+  float: right;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 30px;
+  cursor: pointer;
+}
+
+.signin-btn:hover {
+  opacity: 0.8;
+}
+
+.signin_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 10px;
+}
+
+.signin_modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 45%;
+  /* Could be more or less, depending on screen size */
+}
+
+.signin_modal_container {
+  padding: 16px;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 25;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+  right: 50;
+  margin-left: 300px;
+}
+
+.cancelbtn:hover {
+  opacity: 0.8;
+}
+
+.psw {
+  float: left;
+  padding-top: 16px;
+}
+
+/* Tab's */
+.topnav {
+  background-color: #840404;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFA36C;
+  color: white;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current, a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header .dot {
+  color: #F0FF33;
+}
+
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* Showcase */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#showcase {
+  min-height: 400px;
+  background: url('../Images/showcase.jpg') no-repeat 0 -50px;
+  text-align: center;
+  color: #A90808;
+}
+
+#showcase h1 {
+  margin-top: 180px;
+  font-size: 75px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/*stuffs(Main Page Content's)*/
+#stuffs .stuff {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#stuffs .stuff Images {
+  width: 90%;
+}
+
+.icon {
+  width: 400px;
+  height: 200px;
+  background: #F5F8FA;
+  border-style: ridge;
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.icon p {
+  float: left;
+  width: 30%;
+  margin-top: 10px;
+}
+
+.signup {
+  width: 96%
+}
+
+/*register form */
+.reg-close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+}
+
+.reg-close:hover,
+.reg-close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.reg-animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+.reg-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.reg_modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 45%;
+  /* Could be more or less, depending on screen size */
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#blood_group {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #ddd;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  width: 100%
+}
+
+.reg_cancelbtn, .signupbtn, .register {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.reg_cancelbtn, .signupbtn, .register:hover {
+  opacity: 1;
+}
+
+.reg_cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.reg_cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.reg_modalcontainer {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* boxes */
+#boxes .box {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#boxes .box Images {
+  width: 90%;
+}
+
+.box:hover {
+  background-color: #840404;
+  color: black;
+}
+
+.footer_container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #ddd;
+}
